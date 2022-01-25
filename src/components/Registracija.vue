@@ -1,10 +1,5 @@
 <template>
     <div class="registracija-container" id="registracija">
-        <!-- Registracija korisnika biti će vidljiva tek kad korisnik pritisne "Registracija" u navigacijskoj traci -->
-        <hr>
-
-        <!-- izmjena --><h2 class="podnaslov">* ovaj dio će biti vidljiv kada korisnik pritisne Registracija u navigacijskoj traci, te sam zamislio da će se pojaviti u obliku Modal Box-a, nakon registracije pojavljuje se potvrdna poruka uspješne registracije koja se gasi pritiskom na 'x'. Pokušao sam već napraviti Modal koji se prikazuje i gasi no nisam uspio povezat lokalnu javascript datoteku sa Vue komponentom.</h2>
-
         <h1 class="naslov">Registracija korisnika</h1>
         <h2 class="podnaslov">Registrirajte se kako bi mogli postaviti Vaše oglase ili kontaktirati ostale prodavače.</h2>
         <div class="forma-registracija">

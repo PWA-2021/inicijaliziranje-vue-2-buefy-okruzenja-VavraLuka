@@ -1,10 +1,5 @@
 <template>
     <div class="prijava-container" id="prijava">
-        <!-- Prijava korisnika biti će vidljiva tek kad korisnik pritisne "Prijava" u navigacijskoj traci -->
-        <hr>
-
-        <!-- izmjena --><h2 class="podnaslov">* ovaj dio će biti vidljiv kada korisnik pritisne Prijava u navigacijskoj traci, te sam zamislio da će se pojaviti u obliku Modal Box-a, nakon prijave pojavljuje se potvrdna poruka uspješne prijave koja se gasi pritiskom na 'x'. Pokušao sam već napraviti Modal koji se prikazuje i gasi no nisam uspio povezat lokalnu javascript datoteku sa Vue komponentom.</h2>
-
         <h1 class="naslov">Prijava korisnika</h1>
         <h2 class="podnaslov">Prijavite se u svoj korisnički račun.</h2>
         <div class="forma-prijava">

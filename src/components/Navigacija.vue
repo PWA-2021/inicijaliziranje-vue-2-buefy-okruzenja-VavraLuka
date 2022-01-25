@@ -2,11 +2,11 @@
 <div class="navigacija">
     <div class="navbar-container" id="navigacija">
         <ul>
-            <li class="li-left"><a href="../App.vue">Početna</a><li>
+            <router-link to="/"><li class="li-left">Početna</li></router-link>
             <li class="li-left"><a href="#katalog-uredaja">Katalog uređaja</a></li>
             <li class="li-left"><a href="#dodavanje-uredaja">Dodaj uređaj</a></li>
-            <li class="li-right"><a href="#registracija" id="open-registracija">Registracija</a></li>
-            <li class="li-right"><a href="#prijava" id="open-prijava">Prijava</a></li>
+            <router-link to="/register"><li class="li-right"><a href="#registracija" id="open-registracija">Registracija</a></li></router-link>
+            <router-link to="/login"><li class="li-right"><a href="#prijava" id="open-prijava">Prijava</a></li></router-link>
     <!--    <li class="li-right"><a href="#moj-profil">Moj profil</a></li>
             <li class="li-right"><a href="#odjava">Odjava</a></li> -->
         </ul>
