@@ -12,6 +12,7 @@
     <app-footer>
       <Footer />
     </app-footer>
+    <router-view />
   </div>
 </template>
 
