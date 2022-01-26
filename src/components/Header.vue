@@ -19,17 +19,19 @@
     div.header-container{
         width: 70%;
         margin: 0 auto;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     h1{
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 500;
         margin-top: 80px;
         letter-spacing: -1.8px;
     }
     h2{
-        font-size: 35px;
+        font-size: 28px;
         margin-bottom: 80px;
         letter-spacing: -1.8px;
     }

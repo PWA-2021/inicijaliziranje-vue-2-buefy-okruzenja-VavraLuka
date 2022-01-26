@@ -9,12 +9,6 @@
     <app-oglas>
       <Oglas />
     </app-oglas>
-    <app-moj-profil>
-      <MojProfil />
-    </app-moj-profil>
-    <app-dodaj-uredaj>
-      <DodajUredaj />
-    </app-dodaj-uredaj>
     <app-footer>
       <Footer />
     </app-footer>
@@ -25,17 +19,14 @@
 import Header from "./../components/Header.vue";
 import Katalog from "./../components/Katalog.vue";
 import Footer from "./../components/Footer.vue";
-import DodajUredaj from "./../components/DodajUredaj.vue";
-import MojProfil from "./../components/MojProfil.vue";
 import Oglas from "./../components/Oglas.vue";
+
 export default {
   name: "App",
   components: {
     "app-header": Header,
     "app-katalog": Katalog,
     "app-footer": Footer,
-    "app-dodaj-uredaj": DodajUredaj,
-    "app-moj-profil": MojProfil,
     "app-oglas": Oglas,
   },
 };

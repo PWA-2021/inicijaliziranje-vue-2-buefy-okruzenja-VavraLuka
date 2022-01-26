@@ -1,9 +1,6 @@
 <template>
     <div class="oglas-container" id="oglas">
         <hr>
-        
-        <!-- izmjena --><h2 class="podnaslov">* ovaj dio će biti vidljiv kada korisnik pritisne na neki od proizvoda, zatim se u obliku Modal box-a otvara proizvod sa svim informacijama o odabranom proizvodu.</h2>
-
         <h1 class="naslov">Yamaha EMX512SC</h1>
         <h2 class="podnaslov">Pojačalo</h2>
         <div class="informacije">
@@ -108,13 +105,14 @@
     }
     div.informacije{
         text-align: left;
-        margin-bottom: 50px;
+        margin-bottom: 50%;
     }
     div.oglas-container{
         width: 70%;
         margin: 0 auto;
         font-size: 18px;
         text-align: center;
+        margin-bottom: 700px;
     }
     h1{
         font-size: 35px;
