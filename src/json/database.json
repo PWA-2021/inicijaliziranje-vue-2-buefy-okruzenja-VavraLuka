@@ -25,5 +25,41 @@
         "vrsta": "Najam",
         "datum_objave": "2010-04-23",
         "prodavac": "Luka Vavra"
+    },
+    {
+        "id": 4,
+        "fotografija": "https://www.yamahamusiclondon.com/sites/ymlv5.19/productimages/900x900/CS115V2.jpg",
+        "naslov": "The Box S112V",
+        "cijena": 2599.99,
+        "vrsta": "Najam",
+        "datum_objave": "2010-04-23",
+        "prodavac": "Luka Vavra"
+    },
+    {
+        "id": 5,
+        "fotografija": "https://www.yamahamusiclondon.com/sites/ymlv5.19/productimages/900x900/CS115V2.jpg",
+        "naslov": "The Box S112V",
+        "cijena": 2599.99,
+        "vrsta": "Najam",
+        "datum_objave": "2010-04-23",
+        "prodavac": "Luka Vavra"
+    },
+    {
+        "id": 6,
+        "fotografija": "https://www.yamahamusiclondon.com/sites/ymlv5.19/productimages/900x900/CS115V2.jpg",
+        "naslov": "The Box S112V",
+        "cijena": 2599.99,
+        "vrsta": "Najam",
+        "datum_objave": "2010-04-23",
+        "prodavac": "Luka Vavra"
+    },
+    {
+        "id": 7,
+        "fotografija": "https://www.yamahamusiclondon.com/sites/ymlv5.19/productimages/900x900/CS115V2.jpg",
+        "naslov": "The Box S112V",
+        "cijena": 2599.99,
+        "vrsta": "Najam",
+        "datum_objave": "2010-04-23",
+        "prodavac": "Luka Vavra"
     }
 ]

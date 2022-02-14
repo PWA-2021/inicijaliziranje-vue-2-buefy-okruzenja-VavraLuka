@@ -1,10 +1,5 @@
 <template>
   <div class="katalog-container" id="katalog-uredaja">
-    <div class="test">
-      <b-table :data="data" :columns="columns"></b-table>
-      <router-view />
-    </div>
-    <hr />
     <div class="sortiranje">
       <div class="sortiranje-naslov">
         <h1 class="naslov">Katalog dostupnih uređaja</h1>
@@ -34,7 +29,53 @@
         </form>
       </div>
     </div>
-    <div class="proizvodi">
+    <table class="tablica-proizvoda">
+      <tr>
+        <td>ID proizvoda</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          {{ proizvod.id }}
+        </td>
+      </tr>
+      <tr>
+        <td>Naslov proizvoda</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          {{ proizvod.naslov }}
+        </td>
+      </tr>
+      <tr>
+        <td>Fotografija</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          <img :src="proizvod.naslov" />
+        </td>
+      </tr>
+      <tr>
+        <td>Cijena proizvoda</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          {{ proizvod.cijena }}
+        </td>
+      </tr>
+      <tr>
+        <td>Vrsta oglasa</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          {{ proizvod.vrsta }}
+        </td>
+      </tr>
+      <tr>
+        <td>Datum objave</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          {{ proizvod.datum_objave }}
+        </td>
+      </tr>
+      <tr>
+        <td>Prodavač</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          {{ proizvod.prodavac }}
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+    <!-- <div class="proizvodi">
       <div class="proizvod">
         <a class="proizvod-link">
           <div
@@ -140,65 +181,38 @@
           <p class="prodavac">Objavio: luka123</p></a
         >
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
+import proizvodiData from "../json/database.json";
+
 export default {
   name: "Katalog",
   props: {
     msg: String,
   },
-  mounted() {
-    fetch("../json/database.json")
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-  },
   data() {
-      return {
-      data: [],
-      columns: [
-        {
-            field: 'id',
-            label: 'id',
-            width: '40',
-            numeric: true
-        },
-        {
-            field: 'fotografija',
-            label: 'Fotografija'
-        },
-        {
-            field: 'naslov',
-            label: 'Naslov'
-        },
-        {
-            field: 'cijena',
-            label: 'Cijena',
-            width: '40',
-            numeric: true
-        },
-        {
-            field: 'vrsta',
-            label: 'Vrsta'
-        },
-        {
-            field: 'datum_objave',
-            label: 'Datum objave'
-        },
-        {
-            field: 'prodavac',
-            label: 'Prodavač'
-        }
-      ]
-      }
-  }
+    return {
+      proizvodi: proizvodiData,
+    };
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+table.tablica-proizvoda {
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 125px;
+  margin-bottom: 50px;
+}
+td {
+  border: 1px solid black;
+  padding: 15px;
+}
 div.katalog-container {
   width: 80%;
   margin: 0 auto;
