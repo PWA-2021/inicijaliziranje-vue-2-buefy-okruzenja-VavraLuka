@@ -3,9 +3,9 @@
         <h1 class="naslov">Prijava korisnika</h1>
         <h2 class="podnaslov">Prijavite se u svoj korisnički račun.</h2>
         <div class="forma-prijava">
-            <form class="prijava">
-                <label for="email">Vaša email adresa ili korisničko ime:</label><br>
-                <input type="email" name="email" id="email" placeholder="Email ili korisničko ime"><br><br>
+            <form class="prijava" action="">
+                <label for="korisnicko_ime">Vaša email adresa ili korisničko ime:</label><br>
+                <input type="text" name="korisnicko_ime" id="korisnicko_ime" placeholder="Email adresa ili korisničko ime"><br><br>
                 <label for="lozinka">Lozinka:</label><br>
                 <input type="password" name="lozinka" id="lozinka" placeholder="Lozinka"><br><br>
                 <div class="form-buttons">
