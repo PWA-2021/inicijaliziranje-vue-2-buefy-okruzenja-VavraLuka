@@ -1,6 +1,5 @@
 <template>
     <div class="oglas-container" id="oglas">
-        <hr>
         <h1 class="naslov">Yamaha EMX512SC</h1>
         <h2 class="podnaslov">Pojačalo</h2>
         <div class="informacije">
@@ -124,8 +123,6 @@
         margin-bottom: 50px;
     }
     hr{
-        width: 70%;
-        margin: 0 auto;
-        border: 1px solid rgba(1, 1, 1, 0.25);
+        border: 1px solid black;
     }
 </style>

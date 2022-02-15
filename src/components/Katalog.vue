@@ -44,13 +44,13 @@
       </tr>
       <tr>
         <td>Fotografija</td>
-        <td v-for="proizvod in proizvodi" :key="proizvod.id">
-          <img :src="proizvod.naslov" />
+        <td v-for="proizvod in proizvodi" :key="proizvod.id" class="fotografija">
+          <img :src="proizvod.fotografija" height="100%">
         </td>
       </tr>
       <tr>
         <td>Cijena proizvoda</td>
-        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+        <td v-for="proizvod in proizvodi" :key="proizvod.id" class="cijena">
           {{ proizvod.cijena }}
         </td>
       </tr>
@@ -61,6 +61,12 @@
         </td>
       </tr>
       <tr>
+        <td>Vrijeme najma</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          {{ proizvod.vrijeme_najma }}
+        </td>
+      </tr>
+      <tr>
         <td>Datum objave</td>
         <td v-for="proizvod in proizvodi" :key="proizvod.id">
           {{ proizvod.datum_objave }}
@@ -68,13 +74,31 @@
       </tr>
       <tr>
         <td>Prodavač</td>
-        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+        <td v-for="proizvod in proizvodi" :key="proizvod.id" class="prodavac">
           {{ proizvod.prodavac }}
+        </td>
+      </tr>
+      <tr>
+        <td>Vrsta proizvoda</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          {{ proizvod.vrsta_proizvoda}}
+        </td>
+      </tr>
+      <tr>
+        <td>Radna snaga RMS (Watt)</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          {{ proizvod.radna_snaga}}
+        </td>
+      </tr>
+      <tr>
+        <td>Maksimalna snaga Peak (Watt)</td>
+        <td v-for="proizvod in proizvodi" :key="proizvod.id">
+          {{ proizvod.peak_snaga}}
         </td>
       </tr>
     </table>
 
-    <hr />
+    <hr>
     <!-- <div class="proizvodi">
       <div class="proizvod">
         <a class="proizvod-link">
@@ -209,9 +233,20 @@ table.tablica-proizvoda {
   margin-top: 125px;
   margin-bottom: 50px;
 }
-td {
+td{
   border: 1px solid black;
-  padding: 15px;
+  padding: 15px 5px 5px 15px;
+  text-align: center;
+  vertical-align: center;
+}
+td.fotografija{
+  height: 200px;
+}
+td.cijena{
+  font-size: 20px;
+}
+td.prodavac{
+  font-style: italic;
 }
 div.katalog-container {
   width: 80%;
@@ -234,6 +269,13 @@ div.sortiraj form {
   float: left;
   display: flex;
 }
+div.sortiranje{
+  width: 80%;
+  margin: 0 auto;
+}
+div.sortiranje p{
+  padding-top: 6px;
+}
 div.sortiranje-naslov {
   text-align: center;
   margin-top: 50px;
@@ -241,7 +283,7 @@ div.sortiranje-naslov {
 h1 {
   font-size: 35px;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 h2 {
   font-size: 20px;
@@ -317,7 +359,7 @@ div.proizvod:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-hr {
+hr{
   width: 61%;
   margin: 0 auto;
   border: 1px solid rgba(1, 1, 1, 0.25);
