@@ -3,7 +3,7 @@
     <div class="navbar-container" id="navigacija">
         <ul>
             <router-link to="/"><li class="li-left"><a>Početna</a></li></router-link>
-            <li class="li-left"><a href="#katalog-uredaja">Katalog uređaja</a></li>
+            <router-link to="/katalog"><li class="li-left"><a href="#katalog-uredaja">Katalog uređaja</a></li></router-link>
             <router-link to="/register"><li class="li-right"><a>Registracija</a></li></router-link>
             <router-link to="/login"><li class="li-right"><a>Prijava</a></li></router-link>
     <!--    <li class="li-right"><a href="#moj-profil">Moj profil</a></li>

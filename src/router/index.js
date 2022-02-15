@@ -5,6 +5,7 @@ import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Profil from '../views/Profil.vue'
 import Oglas from '../components/Oglas.vue'
+import Katalog from '../components/Katalog.vue'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,11 @@ const routes = [
         component: Oglas
       }
     ]
+  },
+  {
+    path: '/katalog',
+    name: 'katalog',
+    component: Katalog
   },
   {
     path: '/login',

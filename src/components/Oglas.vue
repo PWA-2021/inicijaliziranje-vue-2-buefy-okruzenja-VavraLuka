@@ -1,15 +1,15 @@
 <template>
     <div class="oglas-container" id="oglas">
-        <h1 class="naslov">Yamaha EMX512SC</h1>
-        <h2 class="podnaslov">Pojačalo</h2>
+        <h1 class="naslov">JBL PRX 412M</h1>
+        <h2 class="podnaslov">Pasivni zvučnik</h2>
         <div class="informacije">
-                <img src="https://muzikercdn.com/uploads/products/59/5911/thumb_d_gallery_base_2931ff0f.jpg" class="fotografija">
+                <img src="https://thumbs.static-thomann.de/thumb/thumb600x600/pics/bdb/286570/7252787_800.jpg" class="fotografija">
                 <div class="tekst">
                     <h2 class="info">Informacije o proizvodu</h2>
                     <table>
                         <tr>
-                            <td>Cijena</td>
-                            <td>2.799,99kn</td>
+                            <td>Cijena uređaja</td>
+                            <td>477€</td>
                         </tr>
                         <tr>
                             <td>Vrsta oglasa</td>
@@ -17,11 +17,34 @@
                         </tr>
                         <tr>
                             <td>Datum objave</td>
-                            <td>27.11.2021.</td>
+                            <td>2021-04-23</td>
                         </tr>
                     </table>
                     <h2 class="info">Opis proizvoda</h2>
-                    <p class="opis">Experienced musicians, performers, speakers, and club operators know the importance of a high-quality sound system with the right features and performance to deliver their sound. Where portability and convenience are important criteria, a system based on a high-performance Yamaha EMX-series powered mixer is definitely the way to go. In one integrated, portable unit you have a mixer to combine and balance your microphone and instrument and line sources, effects to refine and polish your sound, and power to drive the main speakers and even monitor speakers as well.</p>
+                    <p class="opis">Experienced musicians, performers, speakers, and club operators know the importance of a high-quality sound system with the right features and performance to deliver their sound.</p>
+                    <h2 class="info">Tehničke specifikacije uređaja</h2>
+                    <table>
+                       <tr>
+                            <td>Radna snaga RMS</td>
+                            <td>600 Watt</td>
+                        </tr>
+                        <tr>
+                            <td>Maksimalna snaga Peak</td>
+                            <td>1200 Watt</td>
+                        </tr>
+                        <tr>
+                            <td>Frekvencijski raspon</td>
+                            <td>50 Hz - 20 kHz</td>
+                        </tr>
+                        <tr>
+                            <td>Glasnoća</td>
+                            <td>126 dB</td>
+                        </tr>
+                        <tr>
+                            <td>Težina</td>
+                            <td>16 kg</td>
+                        </tr>
+                    </table>
                     <h2 class="info">Informacije o prodavaču</h2>
                     <table>
                        <tr>
@@ -94,7 +117,7 @@
     .tekst{
         float: left;
         width: 60%;
-        padding: 50px;
+        padding-top: 0px;
     }
     .fotografija{
         float: left;
