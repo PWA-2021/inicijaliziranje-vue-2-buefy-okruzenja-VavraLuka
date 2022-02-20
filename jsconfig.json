@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "$libs": ["src/libs"],
+        "$libs/*": ["src/libs/*"],
+      }
+    },
+    "include": ["src/assets/*.d.ts", "src/components/*.js", "src/*.svelte", "src/*.js"],
+    "exclude": ["node_modules", "public", ".github"]
+  }

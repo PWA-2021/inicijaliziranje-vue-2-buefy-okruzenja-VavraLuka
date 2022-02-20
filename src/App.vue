@@ -1,30 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Dobrodošli u Vue 2 za PWA kolegij" />
+    <app-navigacija>
+      <Navigacija />
+    </app-navigacija>
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigacija from "./components/Navigacija.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    "app-navigacija": Navigacija
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  max-width: 600px;
-  margin: 0 auto;
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat';
 }
-
-img {
-  display: block;
-  margin: 30px auto;
+::-webkit-scrollbar {
+    display: none;
+}
+html{
+  scroll-behavior: smooth;
 }
 </style>
